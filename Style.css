@@ -1,0 +1,17 @@
+body {
+    background-color: aqua;
+}
+h2 {
+    color:red;
+    text-align: center;
+}
+strong {
+    border-style: inset;
+    border-color: aquamarine;
+    font-size: 20px;
+}
+button{
+    margin-top: 50px;
+    width:100px;
+    height:50px;
+}
