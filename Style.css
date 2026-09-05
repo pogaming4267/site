@@ -1,3 +1,17 @@
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        background-image: none;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    #myButton {
+        width: 80px;
+        height: 40px;
+    }
+}
+
 body {
     
     background-image:url(photo.png);
@@ -20,16 +34,4 @@ strong {
     height:50px;
     background-color: blue;
     color: white;
-}
-@media (max-width: 800px) {
-    body {
-        background-color: lightblue;
-    }
-    h2 {
-        font-size: 18px;
-    }
-    #myButton {
-        width: 80px;
-        height: 40px;
-    }
 }
