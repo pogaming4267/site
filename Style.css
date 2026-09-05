@@ -23,7 +23,7 @@ strong {
 }
 @media (max-width: 600px) {
     body {
-        background-image: url(photo-small.png);
+        background-color: lightblue;
     }
     h2 {
         font-size: 18px;
