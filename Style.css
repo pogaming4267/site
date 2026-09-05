@@ -21,3 +21,15 @@ strong {
     background-color: blue;
     color: white;
 }
+@media (max-width: 600px) {
+    body {
+        background-image: url(photo-small.png);
+    }
+    h2 {
+        font-size: 18px;
+    }
+    #myButton {
+        width: 80px;
+        height: 40px;
+    }
+}
