@@ -23,6 +23,12 @@ strong {
 
     width:350px;
     height:350px;
+    
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform:translate(-86%, 50%);
+    
 
     background-image:url(button.png);
     background-repeat: no-repeat;
@@ -47,6 +53,7 @@ strong {
         
         width:350px;
         height:350px;
+
         position: relative;
         left: 50%;
         top: 50%;
