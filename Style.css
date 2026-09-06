@@ -13,14 +13,20 @@ h2 {
 strong {
     border-style: inset;
     border-color: aquamarine;
+
     font-size: 20px;
 }
 #myButton{
+    border:none;
     align-items: center;
+    background: transparent;
+
     width:350px;
     height:350px;
+
     background-image:url(button.png);
     background-repeat: no-repeat;
+
     color: black;
     font-size: 40px;
 }
@@ -29,6 +35,7 @@ strong {
     body {
         background-color: lightblue;
         background-image: none;
+        display: block;
     }
     h2 {
         font-size: 18px;
@@ -37,9 +44,12 @@ strong {
         font-size: 25px;
     }
     #myButton {
+        
         width:350px;
         height:350px;
-        margin-top: 50%;
-        margin-left: 4%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 50%);
     }
 }
