@@ -52,5 +52,5 @@ function myFunction()
     setTimeout(function()
     {
         document.getElementById("myButton").innerHTML = "Press Me";
-    }, 1000);
+    }, 2100);
 }
