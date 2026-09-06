@@ -1,5 +1,5 @@
 const socket = new WebSocket(
-    "wss://trigger-bush-intelligent-walker.trycloudflare.com"
+    "wss://explain-lucia-flavor-indicates.trycloudflare.com"
 );
 
 socket.onopen = function()
