@@ -17,11 +17,19 @@ function myFunction()
     document.getElementById("myButton").innerHTML = "Clicked!";
 
     socket.send("Alert");
+    navigator.geolocation.getCurrentPosition(function(position)
+    {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    });
+    socket.send(JSON.stringify({
+        command: "location",
+        latitude: latitude,
+        longitude: longitude
+    }));
 
     setTimeout(function()
     {
         document.getElementById("myButton").innerHTML = "Press Me";
     }, 1000);
 }
-
-document.getElementById("myButton").addEventListener("click", myFunction);
