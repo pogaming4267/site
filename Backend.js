@@ -8,7 +8,24 @@ function myFunction() {
 }
 
 document.getElementById("myButton").addEventListener("click", myFunction);
-const socket = new WebSocket('ws://localhost:9002');
+const socket = new WebSocket(
+    "wss://trigger-bush-intelligent-walker.trycloudflare.com"
+);
+
+socket.onopen = function()
+{
+    console.log("Connected to C++!");
+};
+
+socket.onerror = function(error)
+{
+    console.log("WebSocket error:", error);
+};
+
+document.getElementById("myButton").onclick = function()
+{
+    socket.send("beep");
+};
 socket.onopen = function() {
     console.log('WebSocket connection established');
 }
