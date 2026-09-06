@@ -23,19 +23,23 @@ function myFunction()
     socket.send("Alert");
 
     // Get the user's location
-    navigator.geolocation.getCurrentPosition(
+        navigator.geolocation.getCurrentPosition(
         function(position)
         {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
 
-            // Send location to C++
+            console.log("Latitude:", latitude);
+            console.log("Longitude:", longitude);
+
+            // Send location AFTER we actually have it
             socket.send(JSON.stringify({
                 command: "location",
                 latitude: latitude,
                 longitude: longitude
             }));
         },
+
 
         // Location error handler
         function(error)
