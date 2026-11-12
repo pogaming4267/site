@@ -2,7 +2,7 @@ function test(){
     console.log("hello?")
 }
 const socket = new WebSocket(
-    "api.pogadev.com"
+    "wss://api.pogadev.com"
 );
 
 socket.onopen = function()
