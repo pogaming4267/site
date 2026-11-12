@@ -2,7 +2,7 @@ function test(){
     console.log("hello?")
 }
 const socket = new WebSocket(
-    "wss://explain-lucia-flavor-indicates.trycloudflare.com"
+    "https://hearts-council-thru-remain.trycloudflare.com "
 );
 
 socket.onopen = function()
