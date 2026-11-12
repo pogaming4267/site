@@ -2,7 +2,7 @@ function test(){
     console.log("hello?")
 }
 const socket = new WebSocket(
-    "https://hearts-council-thru-remain.trycloudflare.com "
+    "api.pogadev.com"
 );
 
 socket.onopen = function()
