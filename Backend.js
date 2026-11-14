@@ -2,7 +2,7 @@ function test(){
     console.log("hello?")
 }
 const socket = new WebSocket(
-    "wss://api.pogadev.com"
+    "https://directors-replacement-companies-starter.trycloudflare.com"
 );
 
 socket.onopen = function()
